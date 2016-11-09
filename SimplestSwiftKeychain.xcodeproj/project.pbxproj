@@ -35,8 +35,8 @@
 		1C5B02241DD23317003D32CC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1C5B02291DD23317003D32CC /* SimplestSwiftKeychainTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SimplestSwiftKeychainTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1C5B022F1DD23317003D32CC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		1C5B02381DD2335B003D32CC /* KeychainTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = KeychainTest.swift; path = ../SimplestSwiftKeychain/KeychainTest.swift; sourceTree = "<group>"; };
-		1C5B023A1DD23363003D32CC /* KeychainHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = KeychainHelper.swift; path = SimplestSwiftKeychainTests/KeychainHelper.swift; sourceTree = SOURCE_ROOT; };
+		1C5B02381DD2335B003D32CC /* KeychainTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = KeychainTest.swift; path = KeychainTest.swift; sourceTree = "<group>"; };
+		1C5B023A1DD23363003D32CC /* KeychainHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = KeychainHelper.swift; path = KeychainHelper.swift; sourceTree = "<group>"; };
 		1C5B023D1DD23394003D32CC /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Platforms/iPhoneOS.platform/Developer/Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		1C5B02411DD23411003D32CC /* SimplestSwiftKeychain.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SimplestSwiftKeychain.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -63,10 +63,10 @@
 		1C5B020C1DD23317003D32CC = {
 			isa = PBXGroup;
 			children = (
+				1C5B023C1DD23393003D32CC /* Frameworks */,
+				1C5B02161DD23317003D32CC /* Products */,
 				1C5B02171DD23317003D32CC /* SimplestSwiftKeychain */,
 				1C5B022C1DD23317003D32CC /* SimplestSwiftKeychainTests */,
-				1C5B02161DD23317003D32CC /* Products */,
-				1C5B023C1DD23393003D32CC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -82,13 +82,13 @@
 		1C5B02171DD23317003D32CC /* SimplestSwiftKeychain */ = {
 			isa = PBXGroup;
 			children = (
-				1C5B02411DD23411003D32CC /* SimplestSwiftKeychain.entitlements */,
-				1C5B023A1DD23363003D32CC /* KeychainHelper.swift */,
 				1C5B02181DD23317003D32CC /* AppDelegate.swift */,
-				1C5B021C1DD23317003D32CC /* Main.storyboard */,
 				1C5B021F1DD23317003D32CC /* Assets.xcassets */,
-				1C5B02211DD23317003D32CC /* LaunchScreen.storyboard */,
 				1C5B02241DD23317003D32CC /* Info.plist */,
+				1C5B023A1DD23363003D32CC /* KeychainHelper.swift */,
+				1C5B02211DD23317003D32CC /* LaunchScreen.storyboard */,
+				1C5B021C1DD23317003D32CC /* Main.storyboard */,
+				1C5B02411DD23411003D32CC /* SimplestSwiftKeychain.entitlements */,
 			);
 			path = SimplestSwiftKeychain;
 			sourceTree = "<group>";
@@ -96,8 +96,8 @@
 		1C5B022C1DD23317003D32CC /* SimplestSwiftKeychainTests */ = {
 			isa = PBXGroup;
 			children = (
-				1C5B02381DD2335B003D32CC /* KeychainTest.swift */,
 				1C5B022F1DD23317003D32CC /* Info.plist */,
+				1C5B02381DD2335B003D32CC /* KeychainTest.swift */,
 			);
 			path = SimplestSwiftKeychainTests;
 			sourceTree = "<group>";
@@ -251,6 +251,7 @@
 				1C5B021D1DD23317003D32CC /* Base */,
 			);
 			name = Main.storyboard;
+			path = .;
 			sourceTree = "<group>";
 		};
 		1C5B02211DD23317003D32CC /* LaunchScreen.storyboard */ = {
@@ -259,6 +260,7 @@
 				1C5B02221DD23317003D32CC /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			path = .;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
